@@ -6,12 +6,34 @@
     <title>Async JS</title>
 </head>
 <body>
-    <h1> chai aur code</h1>
+    <h1> About Poonji</h1>
     <button id="stop">Stop</button>
     
 </body>
 <script>
-    setTimeout()
+    setTimeout(function (){
+        console.log("Poonji");
+    }, 10000);// will print poonji after 10 sec
+
+
+// alternative method
+
+    const sayPoonji=function(){
+        console.log("poonji");
+    }
+    const changetext=function(){
+        document.querySelector('h1').
+        innerHTML="she is the best"
+    }
+
+    const changeme=setTimeout(changetext,2000)
+    document.querySelector('#stop').
+    addEventListener('click', function (){
+        clearTimeout(changeme)
+        console.log("Stopped")
+    })
+
+   // setTimeout(changetext,1000);// will print she is the best after 10 sec
 
 </script>
 </html>
