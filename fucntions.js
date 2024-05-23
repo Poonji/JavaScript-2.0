@@ -34,6 +34,7 @@ function calculatecartpricen(num2)
 console.log(calculatecartprice(200,400,322))
 console.log(calculatecartpricen(32,32,434,32,32))*/
 
+
   function handleObject(anyobject)
   {
     console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
@@ -42,3 +43,13 @@ console.log(calculatecartpricen(32,32,434,32,32))*/
   handleObject({username:"sam",
 price: 399
 })
+
+//object passing in arrays
+
+const myNewArray=[200,30,500,699]
+function returnSecondValue(getArray)
+{
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));

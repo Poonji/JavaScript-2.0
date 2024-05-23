@@ -11,7 +11,7 @@ console.log(JsUser.name)
 console.log(JsUser["email"])
 const {location}=JsUser
 console.log(location);
-
+console.log(JsUser.isLoggedIn);
 // --------------------Objects nesting.............................
 
 const regularUser=
